@@ -79,7 +79,7 @@ def lnk_ena_fastq_map():
 
 def run_nextflow(fn, dry_run=False):
     check_fastq_map(fn)
-    root = "/local/data/Malaria/Projects/Takala-Harrison/AFRIMS"
+    root = "/local/scratch/zgohari/pv_vc442024/snp_call_nf_pv"
     cmd = f"""
     eval "$({root}/miniconda3/bin/conda shell.bash hook)"
     conda activate nf
